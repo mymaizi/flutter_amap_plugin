@@ -5,11 +5,7 @@ buildscript {
     }
 
     dependencies {
-<<<<<<< HEAD
         classpath 'com.android.tools.build:gradle:3.2.1'
-=======
-        classpath 'com.android.tools.build:gradle:3.3.2'
->>>>>>> 0e8988f2d5996fe837286fa0892e625f87802d86
     }
 }
 

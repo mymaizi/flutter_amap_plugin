@@ -15,9 +15,5 @@ class MyamapState extends State<Myamap> {
   Widget build(BuildContext context) {
     return AndroidView(viewType: "MyAmapView");
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 0e8988f2d5996fe837286fa0892e625f87802d86
 }

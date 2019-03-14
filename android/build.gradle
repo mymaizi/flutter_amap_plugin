@@ -1,9 +1,6 @@
 group 'com.maizi.myamap'
 version '1.0-SNAPSHOT'
-<<<<<<< HEAD
 
-=======
->>>>>>> 0e8988f2d5996fe837286fa0892e625f87802d86
 buildscript {
     repositories {
         google()
@@ -11,44 +8,27 @@ buildscript {
     }
 
     dependencies {
-<<<<<<< HEAD
         classpath 'com.android.tools.build:gradle:3.2.1'
     }
 }
 
-=======
-        classpath 'com.android.tools.build:gradle:3.3.2'
-    }
-}
->>>>>>> 0e8988f2d5996fe837286fa0892e625f87802d86
 rootProject.allprojects {
     repositories {
         google()
         jcenter()
     }
 }
-<<<<<<< HEAD
 
 apply plugin: 'com.android.library'
 
-=======
-apply plugin: 'com.android.library'
->>>>>>> 0e8988f2d5996fe837286fa0892e625f87802d86
 android {
     compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 16
-<<<<<<< HEAD
         /* ndk {
            abiFilters "armeabi"
        }*/
-=======
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-       /* ndk {
-            abiFilters "armeabi"
-        }*/
->>>>>>> 0e8988f2d5996fe837286fa0892e625f87802d86
     }
     lintOptions {
         disable 'InvalidPackage'
@@ -67,13 +47,6 @@ android {
         }
     }*/
 }
-<<<<<<< HEAD
 dependencies {
     implementation files('libs/AMap3DMap_6.7.0_AMapSearch_6.5.0_AMapLocation_4.4.0_20190213.jar')
 }
-=======
-
-dependencies {
-    implementation files('libs/AMap3DMap_6.7.0_AMapSearch_6.5.0_AMapLocation_4.4.0_20190213.jar')
-}
->>>>>>> 0e8988f2d5996fe837286fa0892e625f87802d86

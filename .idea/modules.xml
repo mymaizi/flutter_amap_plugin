@@ -3,14 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/myamap.iml" filepath="$PROJECT_DIR$/myamap.iml" />
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/android/myamap_android.iml" filepath="$PROJECT_DIR$/android/myamap_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/example/android/myamap_example_android.iml" filepath="$PROJECT_DIR$/example/android/myamap_example_android.iml" />
     </modules>
   </component>
 </project>
-=======
-    </modules>
-  </component>
-</project>
->>>>>>> 0e8988f2d5996fe837286fa0892e625f87802d86
