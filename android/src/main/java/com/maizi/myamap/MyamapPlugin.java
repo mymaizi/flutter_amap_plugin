@@ -1,6 +1,7 @@
 package com.maizi.myamap;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.view.View;
 
 import com.amap.api.maps.MapView;
@@ -17,10 +18,15 @@ import io.flutter.plugin.platform.PlatformViewFactory;
 
 /** MyamapPlugin */
 public class MyamapPlugin {
+ static Registrar _registrar;
   /** Plugin registration. */
   public static void registerWith(Registrar registrar) {
-    MapView _mapView = new MapView(registrar.activity());
-    registrar.platformViewRegistry().registerViewFactory("MyAmapView", new MyAmapViewFactory(_mapView, new StandardMessageCodec()));
+    _registrar=registrar;
+  }
+  public static void registerWith(Bundle savedInstanceState) {
+    MapView _mapView = new MapView(_registrar.activity());
+    _mapView.onCreate(savedInstanceState);
+    _registrar.platformViewRegistry().registerViewFactory("MyAmapView", new MyAmapViewFactory(_mapView, new StandardMessageCodec()));
   }
 
   static class MyAmapViewFactory extends PlatformViewFactory {

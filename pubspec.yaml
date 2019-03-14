@@ -1,8 +1,8 @@
 name: myamap
-description: A new flutter plugin project.
+description: 高德地图flutter插件
 version: 0.0.1
-author:
-homepage:
+author: mymaizi<lqjlmp@gmail.com>
+homepage: https://github.com/mymaizi
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
