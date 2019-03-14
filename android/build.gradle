@@ -1,0 +1,50 @@
+group 'com.maizi.myamap'
+version '1.0-SNAPSHOT'
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+    }
+}
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 16
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+       /* ndk {
+            abiFilters "armeabi"
+        }*/
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    sourceSets { main { jniLibs.srcDirs = ['libs'] } }
+    /*buildTypes {
+        debug{
+            ndk{
+                abiFilters "armeabi"
+            }
+        }
+        release{
+            ndk{
+                abiFilters "armeabi"
+            }
+        }
+    }*/
+}
+
+dependencies {
+    implementation files('libs/AMap3DMap_6.7.0_AMapSearch_6.5.0_AMapLocation_4.4.0_20190213.jar')
+}
