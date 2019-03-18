@@ -12,6 +12,19 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  String _address = "";
+  Future<void> getAddress() async {
+    String address;
+    try {
+      address = await Myamap.getAddress;
+    } on PlatformException {
+      address = 'error address';
+    }
+    setState(() {
+      _address = address;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +32,25 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin amap app'),
         ),
-        body: Myamap(),
+        body: Column(
+          children: <Widget>[
+            Container(
+              child: Row(
+                children: <Widget>[
+                  RaisedButton(
+                    child: Text("获取当前地址:$_address"),
+                    onPressed: () {
+                      getAddress();
+                    },
+                  )
+                ],
+              ),
+            ),
+            Expanded(
+              child: Myamap(),
+            )
+          ],
+        ),
       ),
     );
   }

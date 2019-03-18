@@ -26,6 +26,9 @@ android {
 
     defaultConfig {
         minSdkVersion 16
+        manifestPlaceholders  = [
+                AMAP_APIKEY : "dbc53b4e2fe968d68bae549d187e06a6", // 高德地图key
+        ]
         /* ndk {
            abiFilters "armeabi"
        }*/
