@@ -1,4 +1,4 @@
-myamap 是基于高德地图封装的一个flutter插件（本人非andorid，ios专业开发人员，可能在某些地方还是处于从0开始去接触，难免措辞会不恰当）
+myamap 是基于高德地图封装的一个flutter插件（本人非andorid，ios专业开发人员，纯属打杂人员）
 
 该demo实现了Flutter的基础布局，其中包括（通讯录，列表，搜索，登录等)
 [在线案例](https://github.com/mymaizi/flutter_hello_world)
