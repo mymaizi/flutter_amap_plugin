@@ -25,6 +25,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  setMarkers() {
+    var markers = List<Marker>();
+    markers.add(Marker(29.57, 106.55,"重庆市"));
+    Myamap.setMarkers = markers;
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -40,7 +46,7 @@ class _MyAppState extends State<MyApp> {
                   RaisedButton(
                     child: Text("获取当前地址:$_address"),
                     onPressed: () {
-                      getAddress();
+                      setMarkers();
                     },
                   )
                 ],
