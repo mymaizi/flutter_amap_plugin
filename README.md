@@ -3,6 +3,14 @@ myamap 是基于高德地图封装的一个flutter插件（本人非andorid，io
 该demo实现了Flutter的基础布局，其中包括（通讯录，列表，搜索，登录等)
 [在线案例](https://github.com/mymaizi/flutter_hello_world)
 
+###  Android 地图SDK
+- [x] 显示地图
+- [x] 绘制点标记
+
+###   Android 定位SDK 
+- [x] 获取定位数据
+
+
 ### 可能会遇到的问题，以下为本人亲测问题略显尴尬
 
 * 包引用（建议跟着高德地图官网一步一步的去做）
